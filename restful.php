@@ -8,7 +8,6 @@ require 'vendor/autoload.php';
 
 $app = AppFactory::create();
 
-// Definir las rutas
 $app->post('/users/', function (Request $request, Response $response, $args) {
     $response->getBody()->write("Usuario creado");
     return $response;
